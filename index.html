@@ -1193,7 +1193,7 @@
 
     <label>Address</label>
 
-    <input type=Address,area,road number" id="Address" placeholder="Enter your Address" required>
+    <input type="text" id="address" placeholder="Enter your Address" required>
 
   </div>
 
@@ -1274,6 +1274,7 @@ form.addEventListener("submit", function(e){
   let email = document.getElementById("email");
   let date = document.getElementById("date");
   let time = document.getElementById("time");
+  let address = document.getElementById("address");
   let shootType = document.getElementById("shootType");
   let vision = document.getElementById("vision");
 
@@ -1285,6 +1286,7 @@ form.addEventListener("submit", function(e){
     email.value.trim() === "" ||
     date.value.trim() === "" ||
     time.value.trim() === "" ||
+    address.value.trim() ===""||
     shootType.value.trim() === "" ||
     vision.value.trim() === ""
   ){
@@ -1327,6 +1329,7 @@ Phone: ${phone.value}
 Email: ${email.value}
 Date: ${date.value}
 Time: ${time.value}
+Time: ${address.value}
 Shoot Type: ${shootType.value}
 
 Vision:
